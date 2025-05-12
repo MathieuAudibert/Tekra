@@ -1,7 +1,4 @@
-#!/usr/bin/python
-
 import hashlib
-import datetime
 
 
 def updatehash(*args):
@@ -14,17 +11,18 @@ def updatehash(*args):
 
 
 class Block:
-  transactions = None
-  actuel_hash = None
-  precedent_hash = "0" * 64
-  nonce = 0
 
   def __init__(self, transactions, nombre=0):
     self.transactions = transactions
     self.nombre = nombre
+    self.precedent_hash = "0" * 64
+    self.nonce = 0
 
   def hash(self):
-    return updatehash(self.precedent_hash, self.nombre, self.transactions, self.nonce)
+    return updatehash(self.precedent_hash, self.nombre, self.transactions,
+                      self.nonce)
 
   def __str__(self):
-    return "Block#: %s\nHash: %s\nPrecedent: %s\nNonce: %s\nTransactions: %s\n" % (self.nombre, self.hash(), self.precedent_hash, self.nonce, self.transactions)
+    return "Block#: %s\nHash: %s\nPrecedent: %s\nNonce: %s\nTransactions: %s\n" % (
+        self.nombre, self.hash(), self.precedent_hash, self.nonce,
+        self.transactions)

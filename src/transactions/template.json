@@ -1,0 +1,42 @@
+{
+  "type": "transaction",
+  "version": "1.0.0",
+  "transactions": [
+    {
+      "id": "1",
+      "giver": "FR76123456789",
+      "receiver": "FR76123456789",
+      "amount": 100,
+      "currency": {
+        "name": "Euro",
+        "symbol": "€",
+        "code": "EUR"
+      },
+      "date": "2025-12-08"
+    },
+    {
+      "id": "2",
+      "giver": "FR76123456789",
+      "receiver": "FR76123456789",
+      "amount": 100,
+      "currency": {
+        "name": "Euro",
+        "symbol": "€",
+        "code": "EUR"
+      },
+      "date": "2025-12-08"
+    },
+    {
+      "id": "3",
+      "giver": "FR76123456789",
+      "receiver": "FR76123456789",
+      "amount": 100,
+      "currency": {
+        "name": "Euro",
+        "symbol": "€",
+        "code": "EUR"
+      },
+      "date": "2025-12-08"
+    }
+  ]
+}
