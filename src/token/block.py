@@ -24,19 +24,7 @@ class Block:
     self.nombre = nombre
 
   def hash(self):
-    return updatehash(self.precedent_hash, self.nombre, self.transactions,
-                      self.nonce)
+    return updatehash(self.precedent_hash, self.nombre, self.transactions, self.nonce)
 
   def __str__(self):
-    return "Block#: %s\nHash: %s\nPrecedent: %s\nNonce: %s\nTransactions: %s\n" % (
-        self.nombre, self.hash(), self.precedent_hash, self.nonce,
-        self.transactions)
-
-
-def main():
-  block = Block("transactions")
-  print(block)
-
-
-if __name__ == "__main__":
-  main()
+    return "Block#: %s\nHash: %s\nPrecedent: %s\nNonce: %s\nTransactions: %s\n" % (self.nombre, self.hash(), self.precedent_hash, self.nonce, self.transactions)
