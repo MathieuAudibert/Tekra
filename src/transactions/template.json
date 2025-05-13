@@ -37,6 +37,18 @@
         "code": "EUR"
       },
       "date": "2025-12-08"
+    },
+    {
+      "id": "4",
+      "giver": "FR76123456789",
+      "receiver": "FR76123456789",
+      "amount": 200,
+      "currency": {
+        "name": "BitCoin",
+        "symbol": "₿",
+        "code": "BTC"
+      },
+      "date": "2025-12-08"
     }
   ]
 }
